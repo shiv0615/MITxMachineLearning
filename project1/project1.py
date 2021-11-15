@@ -6,7 +6,7 @@ import os
 # Part I
 def get_order(n_samples):
     try:
-        rootpath = r'/Users/shivswe/Machine_Learning/MITxMachineLearning/project1/sentiment_analysis'
+        rootpath = r'project1/sentiment_analysis'
         filaname = os.path.join(rootpath, str(n_samples) + '.txt')
         with open(filaname) as fp:
             line = fp.readline()
@@ -316,7 +316,7 @@ def bag_of_words(texts):
 
     Feel free to change this code as guided by Problem 9
     """
-    fname = r'/Users/shivswe/Machine_Learning/MITxMachineLearning/project1/sentiment_analysis/stopwords.txt'
+    fname = r'project1/sentiment_analysis/stopwords.txt'
     stopwords = np.loadtxt(fname, delimiter='\n', dtype=str).tolist()
     dictionary = {} # maps word to unique index
     for text in texts:
